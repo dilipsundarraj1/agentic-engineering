@@ -2,7 +2,7 @@
 
 ## Two Developers, Same AI, Very Different Results
 
-Meet two developers. Both are building a Spring Boot application that needs to integrate with an external Payments service.
+Meet two developers. Both are building an application that needs to integrate with an external Payments service.
 
 They both use a coding assistant (GitHub Copilot, Claude Code, Cursor, etc.). They both have the same ticket.
 
@@ -191,4 +191,4 @@ Agentic Engineering is a set of habits:
 - Test every behavior
 - Stay in control of the design
 
-In the next lesson, we look at the specific software fundamentals that make agentic engineering possible — because without them, even the best prompts produce a mess.
+In this course, we will follow the agentic engineering along with spec driven development to build applications or features that aligns with software fundamentals and proven design principles thats easy to understand, maintain and extend.
