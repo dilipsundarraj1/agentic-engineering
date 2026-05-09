@@ -1,8 +1,20 @@
 # How Coding Has Changed with AI
 
-## Where Did the Time Go?
+## How AI Has Changed the Way Developers Work
 
-Think about how a developer spent their day in 2015:
+AI coding tools did not just make developers faster — they shifted what developers actually spend their time on.
+
+A few years ago, most of a developer's day was spent writing code:
+- Reading documentation to understand APIs and libraries
+- Creating classes, models, and boilerplate by hand
+- Wiring components together and handling edge cases manually
+- Thinking about design was a smaller part of the job — the act of writing code itself forced the details out
+
+That has changed significantly. AI can now handle most of the mechanical work in minutes. What is left — and what matters more than ever — is the judgment work: knowing what to build, whether AI got it right, and how to catch what it got wrong.
+
+Here is how that shift looks in practice:
+
+**Before AI:**
 
 | Activity              | Time Spent |
 |-----------------------|------------|
@@ -11,7 +23,7 @@ Think about how a developer spent their day in 2015:
 | Reviewing my own code  | 20%       |
 | Reviewing others' code | 10%       |
 
-Now think about 2026:
+**After AI:**
 
 | Activity              | Time Spent |
 |-----------------------|------------|

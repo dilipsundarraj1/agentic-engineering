@@ -1,5 +1,21 @@
 # Vibecoding vs Agentic Engineering
 
+<!-- TOC -->
+* [Vibecoding vs Agentic Engineering](#vibecoding-vs-agentic-engineering)
+  * [Two Developers, Same AI, Very Different Results](#two-developers-same-ai-very-different-results)
+  * [Developer A: The Vibecoder](#developer-a-the-vibecoder)
+  * [Developer B: The Agentic Engineer](#developer-b-the-agentic-engineer)
+  * [Side-by-Side Comparison](#side-by-side-comparison)
+  * [The Vibecoding Trap](#the-vibecoding-trap)
+  * [What Agentic Engineering Looks Like in Practice](#what-agentic-engineering-looks-like-in-practice)
+    * [Step 1: Think Before You Prompt](#step-1-think-before-you-prompt)
+    * [Step 2: Prompt in Small Chunks](#step-2-prompt-in-small-chunks)
+    * [Step 3: Review With Intent](#step-3-review-with-intent)
+    * [Step 4: Verify With Tests](#step-4-verify-with-tests)
+  * [Summary](#summary)
+<!-- TOC -->
+
+
 ## Two Developers, Same AI, Very Different Results
 
 Meet two developers. Both are building an application that needs to integrate with an external Payments service.
@@ -159,24 +175,6 @@ Every change should have at least one test that proves the behavior works.
 If AI did not write a test — ask for one.
 If AI wrote a test — read it. A test that always passes is worse than no test.
 
----
-
-## Practical Exercise
-
-Take a feature you built recently using AI.
-
-1. Open the code.
-2. Find one class that AI generated.
-3. Answer these questions without running the code:
-   - What does this class do?
-   - What would break if I deleted it?
-   - Does its name describe what it does?
-
-If you struggle to answer — that is a sign of vibecoding. The code was generated, not understood.
-
-Now pick one small piece you do not fully understand. Ask the AI to explain it to you. Then ask if there is a simpler way to write it.
-
-**Understanding what AI produces is not optional. It is the job.**
 
 ---
 
