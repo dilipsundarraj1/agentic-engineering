@@ -34,6 +34,9 @@ Developer A opens their AI tool and types:
 Build a REST client for the Payments service
 ```
 
+<img src="images/vibe-coding.png" alt="Current State of Coding Agents" width="700"/>
+
+
 AI generates:
 - A client class using whatever HTTP library it prefers, ignoring what the project already uses
 - Hardcoded base URL in the client class itself
@@ -59,9 +62,12 @@ Developer A asks AI to fix it. AI adds more code. Things break further.
 
 Developer B stops before prompting. They think through the ticket:
 
-- What already exists? A WebClient bean is already configured in the project. Resilience4j is on the classpath.
-- What changes? A new `PaymentsClient` class that wraps WebClient calls to the Payments API.
-- What must NOT change? The existing WebClient config. The project's error handling conventions.
+<img src="images/agentic-engineering.png" alt="Current State of Coding Agents" width="700"/>
+
+
+- What already exists? Is there an HTTP client or resilience library already in use? Are there existing error handling conventions to follow?
+- What changes? A new `PaymentsClient` that wraps HTTP calls to the Payments API using whatever is already in the project.
+- What must NOT change? Existing client configuration. The project's error handling conventions.
 - What are the edge cases? Retry only on 5xx — never on 4xx. Circuit breaker threshold. Timeout per call.
 
 Then Developer B prompts:
@@ -70,17 +76,23 @@ Then Developer B prompts:
 I need a REST client to integrate with the Payments service using the attached OpenAPI contract.
 
 Rules:
-- Use the existing WebClient bean — do NOT create a new one
+- Use the existing HTTP client already configured in the project — do NOT create a new one
 - Retry on 5xx responses only, up to 3 times with exponential backoff
-- Do NOT retry on 4xx — map those to a PaymentClientException with the error body
-- Add a circuit breaker using Resilience4j that opens after 5 consecutive failures
+- Do NOT retry on 4xx — map those to a PaymentClientException with the error body included
+- Add a circuit breaker that opens after 5 consecutive failures
 - Use a 3-second timeout per request
 
-Start by showing me only the record classes generated from the contract.
+Start by showing me only the request and response model classes generated from the contract.
 Do not write the client yet.
 ```
 
-AI generates a small, focused set of record classes. Developer B reviews them against the contract. Then moves to the next step.
+AI generates a small, focused set of model classes. Developer B reviews them against the contract. Then moves to the next step:
+
+- Step 2: Generate the client class using the existing HTTP client — nothing else
+- Step 3: Add retry and circuit breaker configuration
+- Step 4: Write unit tests for success, 4xx, and 5xx scenarios
+
+Each step is reviewable. Each step is testable. Developer B stays in control.
 
 **This is agentic engineering.** Slower to start. Much faster to finish correctly.
 

@@ -1,5 +1,9 @@
 # How Coding Has Changed with AI
 
+> **AI is rapidly moving from a productivity novelty to an engineering necessity — but most developers are still bridging the gap between impressive demos and code that actually holds up in production.**
+
+<img src="images/current-state-of-coding.png" alt="Current State of Coding Agents" width="700"/>
+
 ## How AI Has Changed the Way Developers Work
 
 AI coding tools did not just make developers faster — they shifted what developers actually spend their time on.
@@ -148,18 +152,4 @@ That judgment is yours — and it is only possible if your fundamentals are soli
 
 This is exactly what this course is about.
 
-We are not just going to talk about these ideas in theory. We are going to learn them by building and implementing real use cases, hands-on. As we write real code, you will see what good fundamentals look like in practice, why they matter when working with AI, and how they help you catch what AI gets wrong before it becomes a problem.
-
----
-
-## Quick Exercise
-
-Think about the last feature you built with AI help.
-
-1. How much time did you spend planning before prompting?
-2. Did you review the AI output line by line, or just run it and hope?
-3. Did you write or verify the tests?
-
-If planning was short and reviewing was shallow — that is the most common pattern, and it is also where most AI-related bugs come from.
-
-In the next lesson, we look at two different approaches to working with AI: Vibecoding vs Agentic Engineering.
+> **We are not just going to talk about these ideas in theory. We are going to learn them by building and implementing real use cases, hands-on. As we write real code, you will see what good fundamentals look like in practice, why they matter when working with AI, and how they help you catch what AI gets wrong before it becomes a problem.**
