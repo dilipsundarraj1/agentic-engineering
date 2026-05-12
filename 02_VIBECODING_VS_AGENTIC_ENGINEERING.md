@@ -4,6 +4,7 @@
 * [Vibecoding vs Agentic Engineering](#vibecoding-vs-agentic-engineering)
   * [Two Developers, Same AI, Very Different Results](#two-developers-same-ai-very-different-results)
   * [Developer A: The Vibecoder](#developer-a-the-vibecoder)
+    * [The Iteration Spiral](#the-iteration-spiral)
   * [Developer B: The Agentic Engineer](#developer-b-the-agentic-engineer)
   * [Side-by-Side Comparison](#side-by-side-comparison)
   * [The Vibecoding Trap](#the-vibecoding-trap)
@@ -53,6 +54,18 @@ Two days later:
 - Nobody knows which class does what
 
 Developer A asks AI to fix it. AI adds more code. Things break further.
+
+### The Iteration Spiral
+
+So Developer A prompts again. And again. Each fix introduces something new to debug:
+- "Why is it retrying on 400s?" → AI adds a condition, breaks something else
+- "The URL is hardcoded" → AI moves it, but now config loading fails
+- "Tests are not passing" → AI rewrites the test to always pass
+- "This class does too much" → AI splits it into 4 classes, none of them named clearly
+
+What started as a 2-hour task is now in its third day. The codebase has grown. Confidence has shrunk. Nobody wants to touch it.
+
+The frustration is not just about bugs — it is about losing control. Every AI iteration digs a deeper hole, and there is no clear way back to solid ground.
 
 **This is vibecoding.** It feels productive in the moment. It accumulates hidden damage over time.
 
